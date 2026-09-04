@@ -1,0 +1,58 @@
+order_id,order_date,customer_name,product,amount_inr,payment_method,status
+ORD-1001,2026-08-21,Sara Nair,POS Terminal Rental,2459.53,Card,created
+ORD-1002,2026-08-04,Meera Verma,RazorpayX Payout Fee,12664.43,Wallet,created
+ORD-1003,2026-08-02,Diya Nair,RazorpayX Payout Fee,987.84,UPI,created
+ORD-1004,2026-08-18,Meera Rao,POS Terminal Rental,4039.02,Wallet,created
+ORD-1005,2026-08-19,Aarav Bhatt,POS Terminal Rental,5471.34,Wallet,created
+ORD-1006,2026-08-11,Diya Bhatt,Payment Links Pro,5465.58,UPI,created
+ORD-1007,2026-08-03,Kavya Malhotra,Payment Links Pro,7307.69,Netbanking,created
+ORD-1008,2026-08-02,Meera Verma,Subscriptions Addon,13621.66,UPI,created
+ORD-1009,2026-08-18,Divya Malhotra,Payment Links Pro,5741.87,Card,created
+ORD-1010,2026-08-03,Myra Bhatt,Payment Links Pro,1277.13,UPI,created
+ORD-1011,2026-08-08,Neha Reddy,Subscriptions Addon,16090.03,Netbanking,created
+ORD-1012,2026-08-06,Diya Pillai,Payment Links Pro,7131.77,UPI,created
+ORD-1013,2026-08-20,Meera Chatterjee,POS Terminal Rental,11911.36,Card,partial_refund
+ORD-1014,2026-08-15,Meera Nair,Invoice Suite,7299.17,Netbanking,created
+ORD-1015,2026-08-02,Vivaan Bhatt,Payment Links Pro,4584.32,Wallet,created
+ORD-1016,2026-08-09,Karan Chatterjee,Payment Links Pro,1644.7,Card,created
+ORD-1017,2026-08-21,Priya Iyer,Payment Links Pro,9461.12,Card,created
+ORD-1018,2026-08-08,Meera Reddy,Invoice Suite,13897.05,Wallet,created
+ORD-1019,2026-08-19,Myra Iyer,RazorpayX Payout Fee,7659.18,Wallet,created
+ORD-1020,2026-08-03,Ishaan Iyer,Invoice Suite,14091.87,Card,created
+ORD-1021,2026-08-14,Neha Rao,RazorpayX Payout Fee,11215.18,Wallet,created
+ORD-1022,2026-08-17,Meera Malhotra,Payment Gateway Plan,4988.02,UPI,created
+ORD-1023,2026-08-18,Rohan Verma,Payment Links Pro,14003.34,Wallet,created
+ORD-1024,2026-08-06,Sara Kapoor,POS Terminal Rental,8639.71,UPI,created
+ORD-1025,2026-08-21,Vikram Joshi,POS Terminal Rental,5836.93,Card,created
+ORD-1026,2026-08-12,Meera Bhatt,RazorpayX Payout Fee,14213.32,UPI,disputed
+ORD-1027,2026-08-20,Aarav Verma,Payment Links Pro,6301.02,Netbanking,created
+ORD-1028,2026-08-08,Karan Verma,Payment Gateway Plan,1495.55,Wallet,created
+ORD-1029,2026-08-03,Meera Bhatt,POS Terminal Rental,18102.62,Card,created
+ORD-1030,2026-08-16,Ananya Reddy,RazorpayX Payout Fee,17540.62,Wallet,created
+ORD-1031,2026-08-07,Diya Chatterjee,Payment Links Pro,17216.89,Wallet,created
+ORD-1032,2026-08-21,Vikram Menon,Payment Gateway Plan,7190.24,Card,created
+ORD-1033,2026-08-08,Aarav Joshi,RazorpayX Payout Fee,1605.67,Card,created
+ORD-1034,2026-08-19,Aditya Chatterjee,Invoice Suite,4424.92,UPI,created
+ORD-1035,2026-08-08,Vivaan Malhotra,Payment Links Pro,1666.58,UPI,created
+ORD-1036,2026-08-17,Sanya Nair,RazorpayX Payout Fee,4745.98,Card,created
+ORD-1037,2026-08-19,Myra Bhatt,Subscriptions Addon,10850.62,Wallet,created
+ORD-1038,2026-08-07,Arjun Gupta,Subscriptions Addon,2152.58,Wallet,created
+ORD-1039,2026-08-15,Vivaan Pillai,Invoice Suite,16042.25,UPI,created
+ORD-1040,2026-08-02,Rohan Bhatt,Payment Gateway Plan,7717.31,Card,partial_refund
+ORD-1041,2026-08-07,Priya Iyer,Subscriptions Addon,3883.27,Card,created
+ORD-1042,2026-08-09,Aditya Menon,RazorpayX Payout Fee,8800.44,UPI,created
+ORD-1043,2026-08-02,Meera Malhotra,Payment Gateway Plan,12221.22,UPI,created
+ORD-1044,2026-08-08,Sanya Menon,POS Terminal Rental,3451.92,Wallet,created
+ORD-1045,2026-08-02,Aarav Rao,Payment Links Pro,3421.7,Wallet,disputed
+ORD-1046,2026-08-10,Meera Pillai,Invoice Suite,8085.29,Wallet,created
+ORD-1047,2026-08-05,Diya Sharma,RazorpayX Payout Fee,3877.66,UPI,disputed
+ORD-1048,2026-08-11,Karan Menon,RazorpayX Payout Fee,1481.83,Card,created
+ORD-1049,2026-08-02,Aditya Malhotra,POS Terminal Rental,17792.06,UPI,created
+ORD-1050,2026-08-20,Myra Rao,Payment Gateway Plan,1676.69,Card,created
+ORD-1051,2026-08-19,Divya Verma,Subscriptions Addon,11181.07,Netbanking,created
+ORD-1052,2026-08-09,Rohan Nair,Payment Links Pro,4136.88,Wallet,partial_refund
+ORD-1053,2026-08-05,Anaya Menon,Payment Links Pro,12574.01,UPI,created
+ORD-1054,2026-08-01,Karan Verma,Payment Gateway Plan,8722.05,Card,created
+ORD-1055,2026-08-17,Kavya Verma,POS Terminal Rental,5236.87,Netbanking,created
+ORD-1056,2026-08-10,Meera Chatterjee,Payment Links Pro,3297.33,UPI,created
+ORD-1035-DUP,2026-08-08,Vivaan Malhotra,Payment Links Pro,1666.58,UPI,created

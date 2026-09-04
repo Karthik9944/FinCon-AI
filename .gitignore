@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv
+v-env
+env/
+venv/
+ENV/
+
+# Streamlit
+.streamlit/
+
+# OS / Editor temporary files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp

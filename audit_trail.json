@@ -1,0 +1,562 @@
+[
+  {
+    "timestamp": "2026-09-04T18:48:26.342054",
+    "entity_id": "ORD-1035-DUP",
+    "resolution_tier": "detector",
+    "status": "duplicate_ledger_row",
+    "reasoning": "Accidental duplicate of ORD-1035 in the ledger itself - should be detected and NOT double-matched against settlement/bank.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342201",
+    "entity_id": "ORD-1026",
+    "resolution_tier": "detector",
+    "status": "exception_disputed_chargeback",
+    "reasoning": "Order disputed/charged back - correctly has NO settlement or bank counterpart. Should stay in exception list, not be force-matched.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342224",
+    "entity_id": "ORD-1045",
+    "resolution_tier": "detector",
+    "status": "exception_disputed_chargeback",
+    "reasoning": "Order disputed/charged back - correctly has NO settlement or bank counterpart. Should stay in exception list, not be force-matched.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342237",
+    "entity_id": "ORD-1047",
+    "resolution_tier": "detector",
+    "status": "exception_disputed_chargeback",
+    "reasoning": "Order disputed/charged back - correctly has NO settlement or bank counterpart. Should stay in exception list, not be force-matched.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342354",
+    "entity_id": "ORD-1033",
+    "resolution_tier": "tier1_exact_single",
+    "status": "tier1_exact_single",
+    "reasoning": "Part of SETL-2007 (1 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342371",
+    "entity_id": "ORD-1030",
+    "resolution_tier": "tier1_exact_single",
+    "status": "tier1_exact_single",
+    "reasoning": "Part of SETL-2010 (1 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.342382",
+    "entity_id": "ORD-1022",
+    "resolution_tier": "tier1_exact_single",
+    "status": "tier1_exact_single",
+    "reasoning": "Part of SETL-2011 (1 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379159",
+    "entity_id": "ORD-1054",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2001 (2 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379190",
+    "entity_id": "ORD-1003",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2001 (2 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379200",
+    "entity_id": "ORD-1008",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2002 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379208",
+    "entity_id": "ORD-1015",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2002 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379215",
+    "entity_id": "ORD-1043",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2002 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379222",
+    "entity_id": "ORD-1049",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2002 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379228",
+    "entity_id": "ORD-1007",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2003 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379234",
+    "entity_id": "ORD-1010",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2003 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379239",
+    "entity_id": "ORD-1020",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2003 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379245",
+    "entity_id": "ORD-1029",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2003 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379251",
+    "entity_id": "ORD-1002",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2004 (2 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379257",
+    "entity_id": "ORD-1053",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2004 (2 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379263",
+    "entity_id": "ORD-1012",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2005 (3 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379269",
+    "entity_id": "ORD-1038",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2005 (3 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379276",
+    "entity_id": "ORD-1041",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2005 (3 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379282",
+    "entity_id": "ORD-1011",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2006 (3 order(s) in batch, net after fee/GST/TDS). NOTE: bank credited 30708.15 vs reported net 30708.16 (rounding drift, needs tolerance match).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379288",
+    "entity_id": "ORD-1018",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2006 (3 order(s) in batch, net after fee/GST/TDS). NOTE: bank credited 30708.15 vs reported net 30708.16 (rounding drift, needs tolerance match).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379295",
+    "entity_id": "ORD-1028",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2006 (3 order(s) in batch, net after fee/GST/TDS). NOTE: bank credited 30708.15 vs reported net 30708.16 (rounding drift, needs tolerance match).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379301",
+    "entity_id": "ORD-1035",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2008 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379307",
+    "entity_id": "ORD-1044",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2008 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379313",
+    "entity_id": "ORD-1035-DUP",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2008 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379319",
+    "entity_id": "ORD-1042",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2008 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379324",
+    "entity_id": "ORD-1046",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2008 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379330",
+    "entity_id": "ORD-1056",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2009 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379336",
+    "entity_id": "ORD-1006",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2009 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379341",
+    "entity_id": "ORD-1021",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2009 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379348",
+    "entity_id": "ORD-1014",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2009 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379353",
+    "entity_id": "ORD-1039",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2009 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379359",
+    "entity_id": "ORD-1036",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2012 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379381",
+    "entity_id": "ORD-1055",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2012 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379386",
+    "entity_id": "ORD-1004",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2012 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379391",
+    "entity_id": "ORD-1009",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2012 (4 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379397",
+    "entity_id": "ORD-1023",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2013 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379402",
+    "entity_id": "ORD-1005",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2013 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379408",
+    "entity_id": "ORD-1019",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2013 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379413",
+    "entity_id": "ORD-1034",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2013 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379420",
+    "entity_id": "ORD-1037",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2013 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379425",
+    "entity_id": "ORD-1051",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2014 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379430",
+    "entity_id": "ORD-1027",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2014 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379435",
+    "entity_id": "ORD-1050",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2014 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379441",
+    "entity_id": "ORD-1001",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2014 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379446",
+    "entity_id": "ORD-1017",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2014 (5 order(s) in batch, net after fee/GST/TDS).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379451",
+    "entity_id": "ORD-1025",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2015 (2 order(s) in batch, net after fee/GST/TDS). NOTE: bank credited 12706.69 vs reported net 12706.70 (rounding drift, needs tolerance match).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379456",
+    "entity_id": "ORD-1032",
+    "resolution_tier": "tier3_many_to_one_batch",
+    "status": "tier3_many_to_one_batch",
+    "reasoning": "Part of SETL-2015 (2 order(s) in batch, net after fee/GST/TDS). NOTE: bank credited 12706.69 vs reported net 12706.70 (rounding drift, needs tolerance match).",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379529",
+    "entity_id": "ORD-1002",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2004 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379537",
+    "entity_id": "ORD-1053",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2004 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379543",
+    "entity_id": "ORD-1023",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2013 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379548",
+    "entity_id": "ORD-1005",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2013 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379553",
+    "entity_id": "ORD-1019",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2013 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379558",
+    "entity_id": "ORD-1034",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2013 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379563",
+    "entity_id": "ORD-1037",
+    "resolution_tier": "detector",
+    "status": "settled_bank_lag",
+    "reasoning": "SETL-2013 reported settled by Razorpay but bank credit not yet visible - timing mismatch, not a real exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379685",
+    "entity_id": "ORD-1013",
+    "resolution_tier": "tier4_llm_agent",
+    "status": "partial_refund",
+    "reasoning": "Order settled in full, then partially refunded via separate later bank debit (BTX-5016). Net position != original order amount.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379698",
+    "entity_id": "ORD-1052",
+    "resolution_tier": "tier4_llm_agent",
+    "status": "partial_refund",
+    "reasoning": "Order settled in full, then partially refunded via separate later bank debit (BTX-5017). Net position != original order amount.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379706",
+    "entity_id": "ORD-1040",
+    "resolution_tier": "tier4_llm_agent",
+    "status": "partial_refund",
+    "reasoning": "Order settled in full, then partially refunded via separate later bank debit (BTX-5018). Net position != original order amount.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379759",
+    "entity_id": "ORD-1013",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379766",
+    "entity_id": "ORD-1016",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379772",
+    "entity_id": "ORD-1024",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379778",
+    "entity_id": "ORD-1031",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379784",
+    "entity_id": "ORD-1040",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379789",
+    "entity_id": "ORD-1048",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379794",
+    "entity_id": "ORD-1052",
+    "resolution_tier": "detector",
+    "status": "pending_settlement",
+    "reasoning": "Order exists in ledger but settlement has not landed yet - counts as 'pending' cash, not an unresolved exception.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379882",
+    "entity_id": "BTX-5019",
+    "resolution_tier": "detector",
+    "status": "unrelated_bank_noise",
+    "reasoning": "'SAVINGS INT CREDIT Q2' is unrelated bank activity - correct system should leave this unmatched, not force it onto an order.",
+    "confidence": 1.0
+  },
+  {
+    "timestamp": "2026-09-04T18:48:26.379890",
+    "entity_id": "BTX-5020",
+    "resolution_tier": "detector",
+    "status": "unrelated_bank_noise",
+    "reasoning": "'AMB CHARGES-AUG' is unrelated bank activity - correct system should leave this unmatched, not force it onto an order.",
+    "confidence": 1.0
+  }
+]
