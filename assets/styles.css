@@ -399,7 +399,7 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
     font-family: 'Plus Jakarta Sans', sans-serif !important;
     font-size: 0.82rem !important;
     color: #F9FAFB !important;
-    table-layout: fixed !important;
+    table-layout: auto !important;
 }
 
 .custom-explorer-table td,
