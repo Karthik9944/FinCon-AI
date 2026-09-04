@@ -1,4 +1,4 @@
-# Pipeline Architecture — AI Finance Controller (Razorpay Track 04)
+# Pipeline Architecture — AI Finance Controller
 
 ## Philosophy: Deterministic-First, AI Only for Residuals
 
