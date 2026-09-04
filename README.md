@@ -1,4 +1,4 @@
-# AI Finance Controller — Razorpay Buildathon (Track 04)
+# AI Finance Controller
 
 > **Run the books and the cash position.**  
 > An automated, multi-tier financial reconciliation controller that ingests internal order ledgers, Razorpay settlement reports, and bank statements, matches records deterministically, handles complex edge cases, computes real cash position rollups, and scores 100% accuracy against ground truth benchmarks.
