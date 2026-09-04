@@ -1,4 +1,4 @@
-# Pipeline Architecture — AI Finance Controller
+# Pipeline Architecture — AI Finance Controller(FinCon AI)
 
 ## Philosophy: Deterministic-First, AI Only for Residuals
 
