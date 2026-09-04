@@ -379,3 +379,39 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
     display: inline-flex;
     align-items: center;
 }
+
+/* ==========================================================================
+   CUSTOM EXPLORER TABLE MULTILINE WRAPPING
+   ========================================================================== */
+.custom-explorer-container {
+    max-height: 480px !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    border-radius: 14px !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.custom-explorer-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    font-size: 0.82rem !important;
+    color: #F9FAFB !important;
+    table-layout: fixed !important;
+}
+
+.custom-explorer-table td,
+.custom-explorer-table th {
+    box-sizing: border-box !important;
+}
+
+.custom-explorer-table td.reasoning-cell {
+    white-space: normal !important;
+    word-wrap: break-word !important;
+    word-break: break-word !important;
+    overflow-wrap: anywhere !important;
+    line-height: 1.5 !important;
+    color: #F3F4F6 !important;
+}

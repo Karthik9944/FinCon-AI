@@ -7,6 +7,7 @@ import altair as alt
 import os
 import sys
 import json
+import html
 from typing import Dict, List, Set
 
 from reconcile.loader import load_orders, load_settlements, load_bank_transactions, load_ground_truth
@@ -470,7 +471,60 @@ with tab_explorer:
 
         exp_df = pd.DataFrame(rows)
         st.markdown(f"<div style='font-size: 0.85rem; color: #818CF8; font-weight: 700; margin-bottom: 10px;'>Showing {len(exp_df)} Reconciled Orders</div>", unsafe_allow_html=True)
-        st.dataframe(exp_df, use_container_width=True, hide_index=True)
+        
+        if not exp_df.empty:
+            html_rows = []
+            for i, row in exp_df.iterrows():
+                bg_style = "background: rgba(31, 41, 55, 0.35);" if i % 2 == 0 else "background: rgba(15, 23, 42, 0.4);"
+                
+                status_str = str(row["Reconciliation Status"])
+                if "Tier 1" in status_str or "Tier 3" in status_str:
+                    status_color = "#34D399"
+                elif "Lag" in status_str:
+                    status_color = "#F59E0B"
+                elif "Pending" in status_str:
+                    status_color = "#38BDF8"
+                else:
+                    status_color = "#FB7185"
+
+                reasoning_clean = html.escape(str(row['Audit Trail Reasoning'])).replace("\n", "<br/>")
+
+                row_html = (
+                    f"<tr style='{bg_style} border-bottom: 1px solid rgba(255,255,255,0.07);'>"
+                    f"<td style='padding: 10px 12px; font-weight: 700; color: #818CF8; white-space: nowrap; vertical-align: top;'>{html.escape(str(row['Order ID']))}</td>"
+                    f"<td style='padding: 10px 12px; color: #9CA3AF; white-space: nowrap; vertical-align: top;'>{html.escape(str(row['Date']))}</td>"
+                    f"<td style='padding: 10px 12px; color: #E2E8F0; vertical-align: top;'>{html.escape(str(row['Customer']))}</td>"
+                    f"<td style='padding: 10px 12px; color: #CBD5E1; vertical-align: top;'>{html.escape(str(row['Product']))}</td>"
+                    f"<td style='padding: 10px 12px; text-align: right; font-weight: 700; color: #F9FAFB; white-space: nowrap; vertical-align: top;'>{html.escape(str(row['Amount (INR)']))}</td>"
+                    f"<td style='padding: 10px 12px; vertical-align: top;'><span style='color: {status_color}; font-weight: 700;'>{html.escape(status_str)}</span></td>"
+                    f"<td class='reasoning-cell' style='padding: 10px 12px; color: #F3F4F6; white-space: normal !important; word-wrap: break-word !important; word-break: break-word !important; line-height: 1.45; vertical-align: top;'>{reasoning_clean}</td>"
+                    f"</tr>"
+                )
+                html_rows.append(row_html)
+            
+            table_body = "".join(html_rows)
+            
+            html_table = (
+                f"<div class='custom-explorer-container'>"
+                f"<table class='custom-explorer-table'>"
+                f"<thead>"
+                f"<tr style='background: #1E293B; position: sticky; top: 0; z-index: 10; border-bottom: 2px solid rgba(255,255,255,0.15);'>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 7%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Order ID</th>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 8%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Date</th>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 10%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Customer</th>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 10%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Product</th>"
+                f"<th style='padding: 12px 10px; text-align: right; width: 9%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Amount (INR)</th>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 11%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Reconciliation Status</th>"
+                f"<th style='padding: 12px 10px; text-align: left; width: 45%; font-family: \"Outfit\", sans-serif; font-weight: 700; color: #9CA3AF;'>Audit Trail Reasoning</th>"
+                f"</tr>"
+                f"</thead>"
+                f"<tbody>{table_body}</tbody>"
+                f"</table>"
+                f"</div>"
+            )
+            st.markdown(html_table, unsafe_allow_html=True)
+        else:
+            st.info("No matching reconciled orders found.")
 
 # ------------------------------------------------------------------------------
 # TAB 4: AI GUARDRAIL & FAILURE RECOVERY INSPECTOR
