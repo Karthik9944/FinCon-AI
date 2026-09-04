@@ -73,24 +73,15 @@ The engine enforces $|\text{Calculated Net} - \text{Reported Net}| \le 0.05 \tex
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
+```text
+├── app.py            # Streamlit dashboard
+├── reconcile.py      # Main reconciliation runner
+├── reconcile/        # Core reconciliation logic
+├── data/             # Input data
+├── tests/            # Unit tests
+├── score.py          # Verification
+└── architecture.md   # System architecture
 ```
-.
-├── reconcile.py               # Main CLI runner
-├── score.py                   # Verification harness against ground_truth.csv
-├── app.py                     # High-aesthetic Streamlit Financial Controller Dashboard
-├── architecture.md            # Pipeline design & guardrails documentation
-├── FAILURE_LOG.md             # Evidence of caught LLM failure & guardrail recovery
-├── README.md                  # Setup & usage guide
-├── data/                      # Input CSV source files
-├── reconcile/                 # Core Python package
-│   ├── loader.py              # Ingestion & schema normalizer
-│   ├── models.py              # Data structures (Order, Settlement, BankTxn, Result)
-│   ├── engine.py              # Tiered reconciliation pipeline orchestrator
-│   ├── detectors.py           # Edge case detectors (duplicates, lag, refunds, noise)
-│   ├── audit.py               # Audit logger
-│   ├── cash_position.py       # Cash rollup calculator
-│   └── tiers/                 # Matching tier algorithms (Tiers 1, 2, 3, 4)
-└── tests/                     # Unit test suite (13 unit tests)
-```
+
