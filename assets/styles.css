@@ -24,7 +24,7 @@ html, body {
 }
 
 /* Totally Hide Streamlit Header Bar, Deploy Button, Hamburger 3-Dots Menu & Footer */
-header[data-testid="stHeader"],
+/*
 div[data-testid="stDecoration"],
 div[data-testid="stStatusWidget"],
 #MainMenu,
@@ -39,6 +39,11 @@ footer {
     opacity: 0 !important;
     pointer-events: none !important;
 }
+
+header[data-testid="stHeader"] {
+    background: transparent !important;
+}
+*/
 
 /* Eliminate default sharp browser focus rings on all clickable elements */
 *:focus, *:focus-visible, *:active {
@@ -414,4 +419,58 @@ div[data-testid="stVerticalBlockBorderWrapper"] {
     overflow-wrap: anywhere !important;
     line-height: 1.5 !important;
     color: #F3F4F6 !important;
+}
+
+/* Remove dark background/mark from sidebar collapsed control */
+[data-testid="collapsedControl"],
+[data-testid="stSidebarCollapsedControl"],
+button[kind="header"] {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+[data-testid="collapsedControl"]:hover,
+[data-testid="stSidebarCollapsedControl"]:hover,
+button[kind="header"]:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Ensure no residual border or background from the sidebar section when collapsed */
+section[data-testid="stSidebar"][aria-expanded="false"],
+section[data-testid="stSidebar"][aria-expanded="false"] * {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Force the Streamlit header to be transparent to remove the solid black bar */
+header,
+header[data-testid="stHeader"],
+div[data-testid="stHeader"],
+.stAppHeader,
+.stApp > header,
+.stHeader,
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep the sidebar control available without reserving a dark header strip. */
+header[data-testid="stHeader"] {
+    position: absolute !important;
+    top: 0 !important;
+    z-index: 999 !important;
+}
+
+[data-testid="collapsedControl"],
+[data-testid="collapsedControl"] *,
+[data-testid="stSidebarCollapsedControl"],
+[data-testid="stSidebarCollapsedControl"] * {
+    background-color: transparent !important;
+    background: transparent !important;
 }
